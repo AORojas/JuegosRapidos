@@ -1,108 +1,101 @@
-# 🎮 JuegosRapidos
+# JuegosRapidos
 
-Portfolio personal de **Adrián Orrego Rojas** - Desarrollador Web Full Stack
+Sitio web arcade hecho con HTML, CSS y JavaScript para reunir juegos rapidos, proyectos propios y clasicos retro embebidos en una misma interfaz.
 
-## 📋 Descripción
+## Estado actual
 
-Este es un sitio web personal que muestra una colección de mini juegos interactivos desarrollados con tecnologías web fundamentales. El proyecto sirve como vitrina de habilidades en desarrollo front-end y como punto de acceso a otros proyectos individuales.
+El proyecto ya incluye:
 
-## 🎯 Características
+- Landing principal con estetica arcade/neon.
+- Seccion de juegos locales cargados desde `games.json`.
+- Seccion `Family Gratis Games` cargada desde `retro-games.json`.
+- Modal para abrir juegos retro embebidos cuando la fuente externa lo permite.
+- Boton para mezclar la seleccion retro.
+- Contador de visitas usando `localStorage`.
+- Logo principal con animacion flotante y efecto neon interactivo.
+- Footer con contacto directo por correo.
 
-- **Diseño responsivo**: Interfaz adaptable a diferentes dispositivos
-- **Estilo moderno**: Gradientes y efectos visuales atractivos
-- **Navegación clara**: Enlaces directos a cada mini juego
-- **Portfolio centralizado**: Todos los proyectos en un solo lugar
+## Tecnologias
 
-## 🎮 Mini Juegos Incluidos
+- HTML5
+- CSS3
+- JavaScript vanilla
+- JSON para contenido dinamico
 
-### 1. 🎮 Ta-Te-Ti (Tres en Línea)
-Juego clásico de estrategia
-- Tecnologías: HTML, CSS, JavaScript puro
-- Características: Reinicio de juego, detección de victorias y empates
-- [Jugar aquí](https://aorojas.github.io/Ta-te-ti/)
-- [Ver código](https://github.com/AORojas/Ta-te-ti)
+## Estructura del proyecto
 
-### 2. 🧠 Memotest
-Juego de memoria y concentración
-- Tecnologías: HTML, CSS, JavaScript puro
-- Características: Volteo de cartas, búsqueda de pares, barajado automático
-- [Jugar aquí](https://aorojas.github.io/Memotest/)
-- [Ver código](https://github.com/AORojas/Memotest)
-
-### 3. 📱 Calculadora
-Calculadora básica con operaciones fundamentales
-- Tecnologías: HTML, CSS, JavaScript puro
-- Características: Operaciones básicas, interfaz intuitiva
-- [Usar calculadora](https://aorojas.github.io/Calculadora/)
-- [Ver código](https://github.com/AORojas/Calculadora)
-
-## 🛠️ Tecnologías
-
-- **HTML5**: Estructura semántica
-- **CSS3**: Estilos, gradientes y animaciones
-- **JavaScript (Vanilla)**: Lógica de juegos sin frameworks
-- **Responsive Design**: Mobile-first approach
-
-## 📁 Estructura del Proyecto
-
-```
+```text
 JuegosRapidos/
-├── index.html          # Página principal
-├── style.css           # Estilos globales
-├── script.js           # Funcionalidades interactivas
-├── Imagenes/          # Recursos gráficos
-│   └── clipart3217438.png
-└── README.md          # Este archivo
+|-- index.html
+|-- style.css
+|-- script.js
+|-- games.json
+|-- retro-games.json
+|-- Imagenes/
+|-- README.md
 ```
 
-## 🚀 Cómo Usar
+## Funcionalidades destacadas
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/AORojas/JuegosRapidos.git
-   ```
+### 1. Juegos propios
 
-2. Abre `index.html` en tu navegador:
-   ```bash
-   open index.html
-   ```
+Los juegos o proyectos locales se cargan desde `games.json` y se muestran como tarjetas con:
 
-3. Haz clic en cualquiera de los juegos para jugar o acceder al código fuente
+- titulo
+- descripcion
+- tecnologias
+- enlace para jugar
+- enlace al codigo
 
-## 💡 Características Destacadas
+### 2. Family Gratis Games
 
-- Animaciones suaves al pasar el mouse
-- Efectos visuales en el header
-- Sombras y gradientes modernos
-- Bordes redondeados y diseño limpio
-- Footer con información de contacto
-- **Animaciones de carga** con JavaScript
-- **Contador de visitas** (almacenado localmente)
-- **Efectos hover interactivos** en proyectos
-- **Easter egg**: Presiona "G" en la consola para ver un mensaje especial
-- **Scroll reveal**: Los proyectos se animen al entrar en vista
+La seccion retro muestra una seleccion aleatoria de clasicos y cada tarjeta incluye:
 
-## ⚙️ Funcionalidades de JavaScript
+- descripcion breve
+- fecha de lanzamiento
+- creador
+- tecnologias en texto
+- acceso para jugar dentro de la pagina o abrir el juego original
 
-El archivo `script.js` incluye:
+Tambien hay un aviso general con controles sugeridos:
 
-1. **Animaciones al cargar** - Los proyectos aparecen con efecto fade-in
-2. **Contador de visitas** - Guarda el número de visitas usando `localStorage`
-3. **Efectos hover** - Los proyectos se elevan y cambian sombra al pasar el mouse
-4. **Scroll suave** - Enlaces con transición suave
-5. **Animaciones scroll** - Elementos se animan al entrar en viewport
-6. **Easter egg** - Presiona "G" para ver un mensaje especial en la consola
-7. **Información de desarrollo** - Mensajes de bienvenida en la consola del navegador
+- `Z` y `X` para jugar
+- `Enter` para `Play`
+- `Shift` izquierdo para `Select`
 
-## 📧 Contacto
+## Importante sobre juegos embebidos
 
-- **Email**: [adrianorregorojas1998@gmail.com](mailto:adrianorregorojas1998@gmail.com)
-- **GitHub**: [AORojas](https://github.com/AORojas)
+Algunos juegos retro dependen de paginas externas. Eso significa que:
 
-## 📝 Licencia
+- pueden mostrar publicidad propia
+- pueden bloquear el uso dentro de `iframe`
+- pueden dejar de funcionar si el sitio externo cambia sus reglas
 
-Este proyecto es de código abierto. Siéntete libre de explorar, clonar y contribuir.
+Cuando eso pasa, se recomienda usar el boton `Abrir Original`.
 
----
+## Personalizacion visual
 
-**© 2025 Adrián Orrego Rojas** — Desarrollador Web Full Stack
+La interfaz tiene una direccion visual arcade con:
+
+- fondos oscuros con gradientes
+- tipografia estilo futurista
+- tarjetas con relieve
+- brillo neon
+- logo con efecto de encendido/apagado interactivo
+
+## Como ejecutar el proyecto
+
+Como es un sitio estatico, alcanza con abrirlo en un servidor local. Por ejemplo, con VS Code y Live Server.
+
+Tambien se puede publicar facilmente en servicios como:
+
+- Netlify
+- GitHub Pages
+- Vercel
+
+## Contacto
+
+Consultas o colaboraciones:
+
+`adrianorregorojas1998@gmail.com`
+
