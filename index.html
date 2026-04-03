@@ -2,49 +2,105 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JuegosRapidos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JuegosRapidos | Arcade Web</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='49' font-size='46'%3E%F0%9F%95%B9%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="title">
-      <div class="text">
-        <h1>Adrián Orrego Rojas</h1>
-        <h2><span class="negro">Desarrollador Web•</span>Full Stack</h2>
+  <div class="bg-layer bg-layer-1"></div>
+  <div class="bg-layer bg-layer-2"></div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="kicker">ARCADE ZONE</p>
+      <h1>JuegosRapidos</h1>
+      <p class="subtitle">Mini juegos web listos para jugar en segundos</p>
+
+      <div class="hero-meta">
+        <div class="stat-card">
+          <span class="stat-label">Creador</span>
+          <span class="stat-value">Adrian Orrego Rojas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Stack</span>
+          <span class="stat-value">HTML / CSS / JavaScript</span>
+        </div>
+        <div class="stat-card" id="visit-counter-card">
+          <span class="stat-label">Visitas</span>
+          <span class="stat-value" id="visit-counter">0</span>
+        </div>
       </div>
-      <img class="logo" src="Imagenes/clipart3217438.png" alt="logotipo">
-      
+
+      <a class="cta-button" href="#games">Explorar Juegos</a>
+    </div>
+
+    <div class="hero-logo-wrap">
+      <img class="neon-ps-logo" src="Imagenes/ebbb7de8-a181-47c1-b47e-c898ba05d5d8.png" alt="Logo joystick estilo PS2" />
     </div>
   </header>
 
-  <section class="projects">
-    <h3>🚀 Mini Juegos</h3>
-    <div class="project">
-      <h3>🎮 Ta-Te-Ti en JavaScript</h3>
-      <p>Juego clásico de tres en línea hecho con HTML, CSS y JavaScript puro. Permite reiniciar el juego y detectar empates o victorias.</p>
-      <a href="https://aorojas.github.io/Ta-te-ti/" target="_blank">🎮 Jugar</a> |
-      <a href="https://github.com/AORojas/Ta-te-ti" target="_blank">📁 Código en GitHub</a>
-    </div>
+  <main>
+    <section id="games" class="projects">
+      <div class="section-head">
+        <h2>Mini Juegos</h2>
+        <p>Los mini juegos presentados en esta sección tiene como finalidad validar y mejorar funcionalidades implementadas, priorizando la lógica de programación y la expereincia interactiva. Juegos publicados: <span id="games-total">0</span></p>
+      </div>
 
-    <div class="project">
-      <h3>🧠 Memotest en JavaScript</h3>
-      <p>Juego de memoria y concentración donde se voltean cartas para encontrar pares o secuencias hecho con HTML, CSS y JavaScript puro. Permite reiniciar el juego pero se baraja el tablero al hacerlo.</p>
-      <a href="https://aorojas.github.io/Memotest/" target="_blank">🎮 Jugar</a> |
-      <a href="https://github.com/AORojas/Memotest" target="_blank">📁 Código en GitHub</a>
-    </div>
+      <div id="games-grid" class="games-grid">
+        <article class="project reveal">
+          <h3>Cargando juegos...</h3>
+          <p>Estamos preparando tu arcade.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="project">
-      <h3>📱 Calculadora en JavaScript</h3>
-      <p>Calculadora básica hecha con HTML, CSS y jS. Una herramienta que realiza cuentas básicas. Proyecto con futuras mejoras.</p>
-      <a href="https://aorojas.github.io/Calculadora/" target="_blank">🎮 Jugar</a> |
-      <a href="https://github.com/AORojas/Calculadora" target="_blank">📁 Código en GitHub</a>
-    </div>
-  </section>
+    <section class="random-games">
+      <div class="section-head">
+        <h2>Family Gratis Games</h2>
+        <p>Seleccion retro embebible.</p>
+      </div>
+
+      <p class="retro-controls-note">Controles generales: Z y X para jugar, Enter para Play y Shift izquierdo para Select en el menu.</p>
+
+      <div id="random-games-grid" class="games-grid">
+        <article class="project reveal">
+          <h3>Cargando clasicos...</h3>
+          <p>Estamos preparando la seleccion retro.</p>
+        </article>
+      </div>
+
+      <p class="source-note">Fuentes externas con modo embed para jugar dentro de esta interfaz.</p>
+      <button class="random-refresh" id="shuffle-random-games" type="button">Cambiar Seleccion</button>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Adrián Orrego Rojas — <a href="mailto: adrianorregorojas1998@gmail.com">Contacto</a></p>
+    <p>(c) 2026 Adrian Orrego Rojas - Escribime a <a href="email:adrianorregorojas1998@gmail.com">adrianorregorojas1998@gmail.com</a></p>
   </footer>
+
+  <div class="game-modal" id="game-modal" aria-hidden="true">
+    <div class="game-modal-backdrop" data-close-modal="true"></div>
+    <section class="game-modal-panel" role="dialog" aria-modal="true" aria-labelledby="game-modal-title">
+      <header class="game-modal-header">
+        <h3 id="game-modal-title">Jugar</h3>
+        <button class="game-modal-close" id="close-game-modal" type="button" aria-label="Cerrar">X</button>
+      </header>
+
+      <div class="game-modal-frame-wrap">
+        <iframe id="game-frame" class="game-frame" title="Juego retro" loading="lazy" allowfullscreen></iframe>
+      </div>
+
+      <div class="game-modal-actions">
+        <a id="open-original-game" class="btn btn-code" href="#" target="_blank" rel="noopener noreferrer">Abrir Original</a>
+      </div>
+
+      <p class="source-note modal-note">Si un juego no carga aqui, usa "Abrir Original".</p>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>

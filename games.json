@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Ta-Te-Ti",
+    "category": "Clasico",
+    "description": "Juego clasico de tres en linea para dos jugadores.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "playUrl": "https://aorojas.github.io/Ta-te-ti/",
+    "repoUrl": "https://github.com/AORojas/Ta-te-ti"
+  },
+  {
+    "title": "Memotest",
+    "category": "Memoria",
+    "description": "Juego de concentracion para encontrar pares de cartas.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "playUrl": "https://aorojas.github.io/Memotest/",
+    "repoUrl": "https://github.com/AORojas/Memotest"
+  },
+  {
+    "title": "Calculadora",
+    "category": "Utilidad",
+    "description": "Calculadora web para operaciones basicas, pensada como practica de logica.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "playUrl": "https://aorojas.github.io/Calculadora/",
+    "repoUrl": "https://github.com/AORojas/Calculadora"
+  }
+]

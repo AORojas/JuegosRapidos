@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Contra",
+    "category": "Accion",
+    "platform": "NES / Family",
+    "description": "Run and gun clasico de Konami para jugar embebido en tu web.",
+    "history": "Nacio como un arcade militar de avance lateral y luego se convirtio en uno de los grandes iconos de accion de la era Family.",
+    "founded": "1987",
+    "creator": "Konami",
+    "source": "RetroGames.cc Embed",
+    "playUrl": "https://www.retrogames.cc/embed/16841-contra-usa.html",
+    "embeddable": true,
+    "tech": ["NES/Famicom", "MOS 6502 Assembly", "Sprites y Tiles 2D", "Audio Chiptune"]
+  },
+  {
+    "title": "Tank Attack (Battle City)",
+    "category": "Arcade",
+    "platform": "NES / Family",
+    "description": "Defiende la base con tanques en este clasico de la era Family.",
+    "history": "Su mezcla de cooperativo, estrategia rapida y mapas por ladrillos lo volvio un clasico inmediato en salones y consolas hogarenas.",
+    "founded": "1985",
+    "creator": "Namco",
+    "source": "RetroGames.cc Embed",
+    "playUrl": "https://www.retrogames.cc/embed/16882-battle-city-japan.html",
+    "embeddable": true,
+    "tech": ["NES/Famicom", "MOS 6502 Assembly", "Motor 2D por Tiles", "Audio Chiptune"]
+  },
+  {
+    "title": "Bomberman",
+    "category": "Accion",
+    "platform": "NES / Family",
+    "description": "Laberintos, bombas y estrategia retro para partidas rapidas.",
+    "history": "Se hizo famoso por sus laberintos cerrados, su ritmo tactico y la idea simple pero brillante de abrir camino con explosiones.",
+    "founded": "1985",
+    "creator": "Hudson Soft",
+    "source": "RetroGames.cc Embed",
+    "playUrl": "https://www.retrogames.cc/embed/20411-bomberman-usa.html",
+    "embeddable": true,
+    "tech": ["NES/Famicom", "MOS 6502 Assembly", "Mapa por Grilla 2D", "Audio Chiptune"]
+  },
+  {
+    "title": "Super Mario Bros - All Star Levels",
+    "category": "Plataformas",
+    "platform": "NES / Family",
+    "description": "Version alternativa estilo Super Mario Bros que permite modo embebido.",
+    "history": "Parte del legado de Mario como referente absoluto de las plataformas, con niveles inspirados en la formula clasica de Nintendo.",
+    "founded": "1985",
+    "creator": "Nintendo",
+    "source": "RetroGames.cc Embed",
+    "playUrl": "https://www.retrogames.cc/embed/44536-super-mario-bros-all-star-levels.html",
+    "embeddable": true,
+    "tech": ["Base NES/Famicom", "MOS 6502 Assembly", "Plataformas 2D por Tiles", "Audio Chiptune"]
+  },
+  {
+    "title": "Pac-Man",
+    "category": "Arcade",
+    "platform": "Arcade",
+    "description": "El clasico de comer puntos y escapar de fantasmas.",
+    "history": "Cambio la historia del videojuego al demostrar que una idea sencilla, legible y adictiva podia conquistar todo tipo de publico.",
+    "founded": "1980",
+    "creator": "Namco",
+    "source": "RetroGames.cc Embed",
+    "playUrl": "https://www.retrogames.cc/embed/9406-pac-man-midway-1.html",
+    "embeddable": true,
+    "tech": ["Arcade Hardware", "CPU Z80 Assembly", "Sprites 2D", "Audio Arcade/Chiptune"]
+  },
+  {
+    "title": "Circus Charlie",
+    "category": "Arcade",
+    "platform": "NES / Family",
+    "description": "Niveles cortos de circo con dificultad clasica.",
+    "history": "Es recordado por su estructura de pruebas breves y por ese humor de circo tipico de los arcades de los ochenta.",
+    "founded": "1984",
+    "creator": "Konami",
+    "source": "RetroGames.cc Embed",
+    "playUrl": "https://www.retrogames.cc/embed/21342-circus-charlie-japan.html",
+    "embeddable": true,
+    "tech": ["NES/Famicom Port", "MOS 6502 Assembly", "Sprites y Tiles 2D", "Audio Chiptune"]
+  }
+]
